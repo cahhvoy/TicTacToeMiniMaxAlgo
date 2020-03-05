@@ -40,13 +40,15 @@
             this.A01 = new System.Windows.Forms.Button();
             this.labelXWins = new System.Windows.Forms.Label();
             this.labelYwins = new System.Windows.Forms.Label();
-            this.labelX = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelXWinsVal = new System.Windows.Forms.Label();
+            this.labelOwinsVal = new System.Windows.Forms.Label();
             this.labelDrawsVal = new System.Windows.Forms.Label();
             this.labelDraw = new System.Windows.Forms.Label();
             this.buttonNewGame = new System.Windows.Forms.Button();
             this.buttonResetGame = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelTopLine = new System.Windows.Forms.Label();
             this.groupBoxGameBtns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,51 +218,51 @@
             this.labelXWins.AutoSize = true;
             this.labelXWins.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.labelXWins.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelXWins.Location = new System.Drawing.Point(425, 69);
+            this.labelXWins.Location = new System.Drawing.Point(420, 66);
             this.labelXWins.Name = "labelXWins";
-            this.labelXWins.Size = new System.Drawing.Size(95, 25);
+            this.labelXWins.Size = new System.Drawing.Size(100, 25);
             this.labelXWins.TabIndex = 1;
-            this.labelXWins.Text = "player X  : ";
+            this.labelXWins.Text = "player  X  : ";
             // 
             // labelYwins
             // 
             this.labelYwins.AutoSize = true;
             this.labelYwins.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.labelYwins.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelYwins.Location = new System.Drawing.Point(426, 110);
+            this.labelYwins.Location = new System.Drawing.Point(421, 107);
             this.labelYwins.Name = "labelYwins";
-            this.labelYwins.Size = new System.Drawing.Size(94, 25);
+            this.labelYwins.Size = new System.Drawing.Size(98, 25);
             this.labelYwins.TabIndex = 2;
-            this.labelYwins.Text = "player Y  : ";
+            this.labelYwins.Text = "player O  : ";
             // 
-            // labelX
+            // labelXWinsVal
             // 
-            this.labelX.AutoSize = true;
-            this.labelX.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.labelX.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelX.Location = new System.Drawing.Point(533, 67);
-            this.labelX.Name = "labelX";
-            this.labelX.Size = new System.Drawing.Size(23, 28);
-            this.labelX.TabIndex = 3;
-            this.labelX.Text = "0";
+            this.labelXWinsVal.AutoSize = true;
+            this.labelXWinsVal.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.labelXWinsVal.ForeColor = System.Drawing.Color.DarkGreen;
+            this.labelXWinsVal.Location = new System.Drawing.Point(533, 64);
+            this.labelXWinsVal.Name = "labelXWinsVal";
+            this.labelXWinsVal.Size = new System.Drawing.Size(23, 28);
+            this.labelXWinsVal.TabIndex = 3;
+            this.labelXWinsVal.Text = "0";
             // 
-            // label1
+            // labelOwinsVal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(533, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 28);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "0";
+            this.labelOwinsVal.AutoSize = true;
+            this.labelOwinsVal.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.labelOwinsVal.ForeColor = System.Drawing.Color.DarkGreen;
+            this.labelOwinsVal.Location = new System.Drawing.Point(533, 105);
+            this.labelOwinsVal.Name = "labelOwinsVal";
+            this.labelOwinsVal.Size = new System.Drawing.Size(23, 28);
+            this.labelOwinsVal.TabIndex = 4;
+            this.labelOwinsVal.Text = "0";
             // 
             // labelDrawsVal
             // 
             this.labelDrawsVal.AutoSize = true;
             this.labelDrawsVal.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.labelDrawsVal.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelDrawsVal.Location = new System.Drawing.Point(533, 149);
+            this.labelDrawsVal.Location = new System.Drawing.Point(533, 146);
             this.labelDrawsVal.Name = "labelDrawsVal";
             this.labelDrawsVal.Size = new System.Drawing.Size(23, 28);
             this.labelDrawsVal.TabIndex = 6;
@@ -271,18 +273,18 @@
             this.labelDraw.AutoSize = true;
             this.labelDraw.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.labelDraw.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelDraw.Location = new System.Drawing.Point(425, 151);
+            this.labelDraw.Location = new System.Drawing.Point(420, 148);
             this.labelDraw.Name = "labelDraw";
-            this.labelDraw.Size = new System.Drawing.Size(95, 25);
+            this.labelDraw.Size = new System.Drawing.Size(98, 25);
             this.labelDraw.TabIndex = 5;
-            this.labelDraw.Text = "Draws     : ";
+            this.labelDraw.Text = "draws      : ";
             // 
             // buttonNewGame
             // 
             this.buttonNewGame.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.buttonNewGame.Location = new System.Drawing.Point(15, 484);
+            this.buttonNewGame.Location = new System.Drawing.Point(14, 499);
             this.buttonNewGame.Name = "buttonNewGame";
-            this.buttonNewGame.Size = new System.Drawing.Size(120, 45);
+            this.buttonNewGame.Size = new System.Drawing.Size(110, 35);
             this.buttonNewGame.TabIndex = 7;
             this.buttonNewGame.Text = "New Game";
             this.buttonNewGame.UseVisualStyleBackColor = true;
@@ -291,37 +293,58 @@
             // buttonResetGame
             // 
             this.buttonResetGame.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.buttonResetGame.Location = new System.Drawing.Point(137, 484);
+            this.buttonResetGame.Location = new System.Drawing.Point(148, 499);
             this.buttonResetGame.Name = "buttonResetGame";
-            this.buttonResetGame.Size = new System.Drawing.Size(120, 45);
+            this.buttonResetGame.Size = new System.Drawing.Size(110, 35);
             this.buttonResetGame.TabIndex = 8;
             this.buttonResetGame.Text = "Reset";
             this.buttonResetGame.UseVisualStyleBackColor = true;
+            this.buttonResetGame.Click += new System.EventHandler(this.buttonResetGame_Click);
             // 
             // buttonExit
             // 
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.buttonExit.Location = new System.Drawing.Point(452, 484);
+            this.buttonExit.Location = new System.Drawing.Point(446, 499);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(120, 45);
+            this.buttonExit.Size = new System.Drawing.Size(110, 35);
             this.buttonExit.TabIndex = 9;
             this.buttonExit.Text = "Exit Game";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 495);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
+            // labelTopLine
+            // 
+            this.labelTopLine.AutoSize = true;
+            this.labelTopLine.Location = new System.Drawing.Point(15, 50);
+            this.labelTopLine.Name = "labelTopLine";
+            this.labelTopLine.Size = new System.Drawing.Size(35, 13);
+            this.labelTopLine.TabIndex = 11;
+            this.labelTopLine.Text = "label2";
             // 
             // TictacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.labelTopLine);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonResetGame);
             this.Controls.Add(this.buttonNewGame);
             this.Controls.Add(this.labelDrawsVal);
             this.Controls.Add(this.labelDraw);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelX);
+            this.Controls.Add(this.labelOwinsVal);
+            this.Controls.Add(this.labelXWinsVal);
             this.Controls.Add(this.labelYwins);
             this.Controls.Add(this.labelXWins);
             this.Controls.Add(this.groupBoxGameBtns);
@@ -349,13 +372,15 @@
         private System.Windows.Forms.Button A01;
         private System.Windows.Forms.Label labelXWins;
         private System.Windows.Forms.Label labelYwins;
-        private System.Windows.Forms.Label labelX;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelXWinsVal;
+        private System.Windows.Forms.Label labelOwinsVal;
         private System.Windows.Forms.Label labelDrawsVal;
         private System.Windows.Forms.Label labelDraw;
         private System.Windows.Forms.Button buttonNewGame;
         private System.Windows.Forms.Button buttonResetGame;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTopLine;
     }
 }
 
