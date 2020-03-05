@@ -1,0 +1,9 @@
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\bin\Debug\Tic tac Toe.exe.config
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\bin\Debug\Tic tac Toe.exe
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\bin\Debug\Tic tac Toe.pdb
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.csprojAssemblyReference.cache
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic_tac_Toe.Properties.Resources.resources
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.csproj.GenerateResource.cache
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.exe
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.pdb
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic_tac_Toe.TictacToe.resources
