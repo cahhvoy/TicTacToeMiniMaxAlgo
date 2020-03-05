@@ -70,7 +70,7 @@ namespace Tic_tac_Toe
                                 {
                                     //CustomMsgBox msgBox = new CustomMsgBox();
                                     //msgBox.ShowDialog();
-                                    //MessageBox.Show("Player X Wins");
+                                    MessageBox.Show("Player X Wins");
                                     playerXWins++;                        
                                     labelXWinsVal.Text = playerXWins.ToString();
                                     NewGame();
