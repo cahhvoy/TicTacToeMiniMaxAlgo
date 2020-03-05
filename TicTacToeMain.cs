@@ -47,55 +47,55 @@ namespace Tic_tac_Toe
         }
 
         private void buttonClick(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-
-            if (button.Text == "")
             {
-                if (currPlayer % 2 == 0)
-                    {
-                        button.Text = "X";
-                        currPlayer++;
-                        turns++;
-                    }
-                else
-                    {
-                        button.Text = "O";
-                        currPlayer++;
-                        turns++;
-                    }
-                if (CheckForAWin() == true)
-                    {
-                        if (button.Text == "X")
-                            {
-                                //CustomMsgBox msgBox = new CustomMsgBox();
-                                //msgBox.ShowDialog();
-                                //MessageBox.Show("Player X Wins");
-                                playerXWins++;                        
-                                labelXWinsVal.Text = playerXWins.ToString();
-                                NewGame();
-                            }
-                        else
-                            {
-                                MessageBox.Show("Player O Wins");
-                                playerOWins++;
-                                labelOwinsVal.Text = playerOWins.ToString();
-                                NewGame();                    
-                            }
-                    }
-                if (CheckDraw() == true)
-                    {
-                        MessageBox.Show("Its A Draw");
-                        playersDraw++;
-                        labelDrawsVal.Text = playersDraw.ToString();                   
-                        NewGame();
-                   }
-                //check if draw or win  every time a move is Made
-                //if()
-            
-            }
+                Button button = (Button)sender;
 
-        }
+                if (button.Text == "")
+                {
+                    if (currPlayer % 2 == 0)
+                        {
+                            button.Text = "X";
+                            currPlayer++;
+                            turns++;
+                        }
+                    else
+                        {
+                            button.Text = "O";
+                            currPlayer++;
+                            turns++;
+                        }
+                    if (CheckForAWin() == true)
+                        {
+                            if (button.Text == "X")
+                                {
+                                    //CustomMsgBox msgBox = new CustomMsgBox();
+                                    //msgBox.ShowDialog();
+                                    //MessageBox.Show("Player X Wins");
+                                    playerXWins++;                        
+                                    labelXWinsVal.Text = playerXWins.ToString();
+                                    NewGame();
+                                }
+                            else
+                                {
+                                    MessageBox.Show("Player O Wins");
+                                    playerOWins++;
+                                    labelOwinsVal.Text = playerOWins.ToString();
+                                    NewGame();                    
+                                }
+                        }
+                    if (CheckDraw() == true)
+                        {
+                            MessageBox.Show("Its A Draw");
+                            playersDraw++;
+                            labelDrawsVal.Text = playersDraw.ToString();                   
+                            NewGame();
+                       }
+                    //check if draw or win  every time a move is Made
+                    //if()
+            
+                }
+
+            }
 
         private void buttonMouseHover(object sender, EventArgs e)
         {
@@ -123,21 +123,21 @@ namespace Tic_tac_Toe
         }
 
         private void buttonNewGame_Click(object sender, EventArgs e)
-        {
-            NewGame();
-        }
+            {
+                NewGame();
+            }
 
         bool CheckDraw()
-        {
-            if (turns == 9 && CheckForAWin()==false)
-                {
-                    return true;
-                }
-            else
-                {
-                    return false;
-                }
-        }
+            {
+                if (turns == 9 && CheckForAWin()==false)
+                    {
+                        return true;
+                    }
+                else
+                    {
+                        return false;
+                    }
+            }
 
         bool CheckForAWin()
             {
@@ -185,6 +185,7 @@ namespace Tic_tac_Toe
                             return false;
                         }
                 }
+
         private void buttonResetGame_Click(object sender, EventArgs e)
             {
                 NewGame();
