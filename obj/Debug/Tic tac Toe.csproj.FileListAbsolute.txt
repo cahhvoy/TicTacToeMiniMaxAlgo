@@ -7,3 +7,4 @@ A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.
 A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.exe
 A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic tac Toe.pdb
 A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic_tac_Toe.TictacToe.resources
+A:\_visual studio\Visual Studio 2019\Projects\Tic tac Toe\obj\Debug\Tic_tac_Toe.CustomMsgBox.resources
