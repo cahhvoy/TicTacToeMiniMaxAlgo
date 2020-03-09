@@ -78,6 +78,8 @@ namespace Tic_tac_Toe
                         {
                             if (myTurn == false)
                                 {
+                                    CustomMsgBox MsgBoxCst = new CustomMsgBox();
+                                    MsgBoxCst.ShowDialog();
                                     MessageBox.Show("You Win");
                                     playerXWins++;                        
                                     labelHumanWinsVal.Text = playerXWins.ToString();

@@ -30,44 +30,34 @@
         {
             this.panelCustomMsgBox = new System.Windows.Forms.Panel();
             this.labelBotLine = new System.Windows.Forms.Label();
-            this.buttonClose = new System.Windows.Forms.Button();
             this.labelTopLine = new System.Windows.Forms.Label();
-            this.panelDivider = new System.Windows.Forms.Panel();
+            this.labelClose = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelWinner = new System.Windows.Forms.Label();
             this.panelCustomMsgBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelCustomMsgBox
             // 
             this.panelCustomMsgBox.BackColor = System.Drawing.SystemColors.Control;
+            this.panelCustomMsgBox.Controls.Add(this.labelWinner);
+            this.panelCustomMsgBox.Controls.Add(this.label1);
+            this.panelCustomMsgBox.Controls.Add(this.labelClose);
             this.panelCustomMsgBox.Controls.Add(this.labelBotLine);
-            this.panelCustomMsgBox.Controls.Add(this.buttonClose);
             this.panelCustomMsgBox.Controls.Add(this.labelTopLine);
-            this.panelCustomMsgBox.Location = new System.Drawing.Point(2, 2);
+            this.panelCustomMsgBox.Location = new System.Drawing.Point(1, 1);
             this.panelCustomMsgBox.Name = "panelCustomMsgBox";
-            this.panelCustomMsgBox.Size = new System.Drawing.Size(446, 259);
+            this.panelCustomMsgBox.Size = new System.Drawing.Size(448, 268);
             this.panelCustomMsgBox.TabIndex = 0;
             // 
             // labelBotLine
             // 
             this.labelBotLine.AutoSize = true;
-            this.labelBotLine.Location = new System.Drawing.Point(86, 158);
+            this.labelBotLine.Location = new System.Drawing.Point(86, 211);
             this.labelBotLine.Name = "labelBotLine";
             this.labelBotLine.Size = new System.Drawing.Size(65, 28);
             this.labelBotLine.TabIndex = 5;
             this.labelBotLine.Text = "label1";
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonClose.Location = new System.Drawing.Point(187, 188);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(72, 34);
-            this.buttonClose.TabIndex = 4;
-            this.buttonClose.Text = "O.K";
-            this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // labelTopLine
             // 
@@ -78,21 +68,46 @@
             this.labelTopLine.TabIndex = 3;
             this.labelTopLine.Text = "label1";
             // 
-            // panelDivider
+            // labelClose
             // 
-            this.panelDivider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panelDivider.Location = new System.Drawing.Point(0, 260);
-            this.panelDivider.Name = "panelDivider";
-            this.panelDivider.Size = new System.Drawing.Size(450, 10);
-            this.panelDivider.TabIndex = 6;
+            this.labelClose.AutoSize = true;
+            this.labelClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelClose.Font = new System.Drawing.Font("Tw Cen MT", 20F, System.Drawing.FontStyle.Bold);
+            this.labelClose.ForeColor = System.Drawing.Color.Green;
+            this.labelClose.Location = new System.Drawing.Point(195, 232);
+            this.labelClose.Name = "labelClose";
+            this.labelClose.Size = new System.Drawing.Size(58, 31);
+            this.labelClose.TabIndex = 6;
+            this.labelClose.Text = "O.K";
+            this.labelClose.Click += new System.EventHandler(this.labelClose_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 17F);
+            this.label1.Location = new System.Drawing.Point(73, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 31);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Winner  :  ";
+            // 
+            // labelWinner
+            // 
+            this.labelWinner.AutoSize = true;
+            this.labelWinner.Font = new System.Drawing.Font("Tw Cen MT", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWinner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelWinner.Location = new System.Drawing.Point(192, 74);
+            this.labelWinner.Name = "labelWinner";
+            this.labelWinner.Size = new System.Drawing.Size(85, 31);
+            this.labelWinner.TabIndex = 8;
+            this.labelWinner.Text = "label1";
             // 
             // CustomMsgBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.DarkGreen;
             this.ClientSize = new System.Drawing.Size(450, 270);
-            this.Controls.Add(this.panelDivider);
             this.Controls.Add(this.panelCustomMsgBox);
             this.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -111,8 +126,9 @@
 
         private System.Windows.Forms.Panel panelCustomMsgBox;
         private System.Windows.Forms.Label labelBotLine;
-        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelTopLine;
-        private System.Windows.Forms.Panel panelDivider;
+        private System.Windows.Forms.Label labelClose;
+        private System.Windows.Forms.Label labelWinner;
+        private System.Windows.Forms.Label label1;
     }
 }

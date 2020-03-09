@@ -37,9 +37,11 @@ namespace Tic_tac_Toe
 
        
 
-        private void buttonClose_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
+        
+
+        private void labelClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
