@@ -28,10 +28,11 @@ namespace Tic_tac_Toe
         public bool myTurn = true;
         //if true i play if false CPU plays
 
-        public int CpuLevel = 2;
-            //1 dumb =random moves
-            //2 lil intelligent 
-        
+        public static int CpuLevel = 2;
+        public static string CpuLevelStr = "Smart Cpu {1}";
+        //1 dumb =random moves
+        //2 lil intelligent 
+
 
         private void TictacToe_Load(object sender, EventArgs e)
         {
@@ -51,6 +52,7 @@ namespace Tic_tac_Toe
                 label1.BackColor = Color.Maroon;
                 label1.BorderStyle = BorderStyle.None;
 
+                labelCpuLvlStr.Text = CpuLevelStr;
         }
 
         private void buttonClick(object sender, EventArgs e)
@@ -120,6 +122,7 @@ namespace Tic_tac_Toe
 
         void NewGame()
         {
+            buttonResetGame.Text = CpuLevel.ToString();
             myTurn = true;
             turns = 0;
             foreach( Control button in groupBoxGameBtns.Controls)
@@ -341,7 +344,10 @@ namespace Tic_tac_Toe
                         //foreach (var c in cntrls)
                         //    {                       
                         //    }
-
+                        //int c = 0;
+                        //while (c <= cntrls.Length)
+                        //   {  
+                        //   }
                         labelHumanWins.ForeColor = Color.Gray;
                         labelHumanWinsVal.ForeColor = Color.DarkGreen;
                         labelCpuwins.ForeColor = Color.Gray;

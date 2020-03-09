@@ -21,13 +21,33 @@ namespace Tic_tac_Toe
             {
                 labelGameTitleLine.AutoSize = false;
                 labelGameTitleLine.Text = "";
-                labelGameTitleLine.Height = 2;
+                labelGameTitleLine.Height = 1;
                 labelGameTitleLine.Width = 165;
                 labelGameTitleLine.BorderStyle = BorderStyle.None;
                 labelGameTitleLine.BackColor = Color.DarkOrange;
-            }
+           
+                labelCpuDivider.AutoSize = false;
+                labelCpuDivider.Text = "";
+                labelCpuDivider.Height = 1;
+                labelCpuDivider.Width = 225;
+                labelCpuDivider.BorderStyle = BorderStyle.None;
+                labelCpuDivider.BackColor = Color.DimGray;
 
-      
+               
+               int selected = TictacToe.CpuLevel;
+                 if (selected == 1)
+                    {
+                        radioButtonRandom.Checked = true;
+                    }
+                 else if (selected == 2)
+                    {
+                        radioButtonSmartLvl1.Checked = true;
+                    }
+
+
+        }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -35,6 +55,20 @@ namespace Tic_tac_Toe
 
             this.Close();
 
+        }
+
+        private void radioButtonRandom_CheckedChanged(object sender, EventArgs e)
+        {
+            TictacToe.CpuLevel = 1;
+            TictacToe ticMain = new TictacToe();
+            ticMain.labelCpuLvlStr.Text = "Random Moves";
+        }
+
+        private void radioButtonSmartLvl1_CheckedChanged(object sender, EventArgs e)
+        {
+            TictacToe.CpuLevel = 2;
+            TictacToe ticMain = new TictacToe();
+            ticMain.labelCpuLvlStr.Text = "Smart Cpu {1}";
         }
     }
 }

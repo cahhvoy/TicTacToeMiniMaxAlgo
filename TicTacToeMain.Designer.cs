@@ -50,6 +50,9 @@
             this.labelTopLine = new System.Windows.Forms.Label();
             this.labelHumanWins = new System.Windows.Forms.Label();
             this.labelGameSettings = new System.Windows.Forms.Label();
+            this.labelCpuLvlStr = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBoxGameBtns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +80,7 @@
             this.A23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A23.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A23.ForeColor = System.Drawing.Color.Green;
-            this.A23.Location = new System.Drawing.Point(263, 270);
+            this.A23.Location = new System.Drawing.Point(256, 259);
             this.A23.Name = "A23";
             this.A23.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A23.Size = new System.Drawing.Size(110, 110);
@@ -93,7 +96,7 @@
             this.A22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A22.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A22.ForeColor = System.Drawing.Color.Green;
-            this.A22.Location = new System.Drawing.Point(143, 270);
+            this.A22.Location = new System.Drawing.Point(136, 259);
             this.A22.Name = "A22";
             this.A22.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A22.Size = new System.Drawing.Size(110, 110);
@@ -109,7 +112,7 @@
             this.A21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A21.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A21.ForeColor = System.Drawing.Color.Green;
-            this.A21.Location = new System.Drawing.Point(23, 270);
+            this.A21.Location = new System.Drawing.Point(16, 259);
             this.A21.Name = "A21";
             this.A21.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A21.Size = new System.Drawing.Size(110, 110);
@@ -125,7 +128,7 @@
             this.A13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A13.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A13.ForeColor = System.Drawing.Color.Green;
-            this.A13.Location = new System.Drawing.Point(263, 150);
+            this.A13.Location = new System.Drawing.Point(256, 139);
             this.A13.Name = "A13";
             this.A13.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A13.Size = new System.Drawing.Size(110, 110);
@@ -141,7 +144,7 @@
             this.A12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A12.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A12.ForeColor = System.Drawing.Color.Green;
-            this.A12.Location = new System.Drawing.Point(143, 150);
+            this.A12.Location = new System.Drawing.Point(136, 139);
             this.A12.Name = "A12";
             this.A12.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A12.Size = new System.Drawing.Size(110, 110);
@@ -157,7 +160,7 @@
             this.A11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A11.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A11.ForeColor = System.Drawing.Color.Green;
-            this.A11.Location = new System.Drawing.Point(23, 150);
+            this.A11.Location = new System.Drawing.Point(16, 139);
             this.A11.Name = "A11";
             this.A11.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A11.Size = new System.Drawing.Size(110, 110);
@@ -173,7 +176,7 @@
             this.A03.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A03.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A03.ForeColor = System.Drawing.Color.Green;
-            this.A03.Location = new System.Drawing.Point(263, 30);
+            this.A03.Location = new System.Drawing.Point(256, 19);
             this.A03.Name = "A03";
             this.A03.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A03.Size = new System.Drawing.Size(110, 110);
@@ -189,7 +192,7 @@
             this.A02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A02.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A02.ForeColor = System.Drawing.Color.Green;
-            this.A02.Location = new System.Drawing.Point(143, 30);
+            this.A02.Location = new System.Drawing.Point(136, 19);
             this.A02.Name = "A02";
             this.A02.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A02.Size = new System.Drawing.Size(110, 110);
@@ -205,7 +208,7 @@
             this.A01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A01.Font = new System.Drawing.Font("Stencil Std", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A01.ForeColor = System.Drawing.Color.Green;
-            this.A01.Location = new System.Drawing.Point(23, 30);
+            this.A01.Location = new System.Drawing.Point(16, 19);
             this.A01.Name = "A01";
             this.A01.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.A01.Size = new System.Drawing.Size(110, 110);
@@ -219,7 +222,7 @@
             this.labelCpuwins.AutoSize = true;
             this.labelCpuwins.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.labelCpuwins.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelCpuwins.Location = new System.Drawing.Point(407, 117);
+            this.labelCpuwins.Location = new System.Drawing.Point(407, 106);
             this.labelCpuwins.Name = "labelCpuwins";
             this.labelCpuwins.Size = new System.Drawing.Size(131, 25);
             this.labelCpuwins.TabIndex = 2;
@@ -241,7 +244,7 @@
             this.labelCpuWinsVal.AutoSize = true;
             this.labelCpuWinsVal.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.labelCpuWinsVal.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelCpuWinsVal.Location = new System.Drawing.Point(541, 115);
+            this.labelCpuWinsVal.Location = new System.Drawing.Point(541, 104);
             this.labelCpuWinsVal.Name = "labelCpuWinsVal";
             this.labelCpuWinsVal.Size = new System.Drawing.Size(23, 28);
             this.labelCpuWinsVal.TabIndex = 4;
@@ -252,7 +255,7 @@
             this.labelDrawsVal.AutoSize = true;
             this.labelDrawsVal.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.labelDrawsVal.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelDrawsVal.Location = new System.Drawing.Point(541, 156);
+            this.labelDrawsVal.Location = new System.Drawing.Point(541, 150);
             this.labelDrawsVal.Name = "labelDrawsVal";
             this.labelDrawsVal.Size = new System.Drawing.Size(23, 28);
             this.labelDrawsVal.TabIndex = 6;
@@ -263,7 +266,7 @@
             this.labelDrawS.AutoSize = true;
             this.labelDrawS.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.labelDrawS.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelDrawS.Location = new System.Drawing.Point(407, 158);
+            this.labelDrawS.Location = new System.Drawing.Point(407, 152);
             this.labelDrawS.Name = "labelDrawS";
             this.labelDrawS.Size = new System.Drawing.Size(130, 25);
             this.labelDrawS.TabIndex = 5;
@@ -319,7 +322,7 @@
             // labelTopLine
             // 
             this.labelTopLine.AutoSize = true;
-            this.labelTopLine.Location = new System.Drawing.Point(23, 60);
+            this.labelTopLine.Location = new System.Drawing.Point(21, 60);
             this.labelTopLine.Name = "labelTopLine";
             this.labelTopLine.Size = new System.Drawing.Size(35, 13);
             this.labelTopLine.TabIndex = 11;
@@ -340,20 +343,54 @@
             // 
             this.labelGameSettings.AutoSize = true;
             this.labelGameSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelGameSettings.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold);
+            this.labelGameSettings.Font = new System.Drawing.Font("Tw Cen MT", 14F);
             this.labelGameSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.labelGameSettings.Location = new System.Drawing.Point(407, 9);
+            this.labelGameSettings.Location = new System.Drawing.Point(408, 424);
             this.labelGameSettings.Name = "labelGameSettings";
-            this.labelGameSettings.Size = new System.Drawing.Size(114, 20);
+            this.labelGameSettings.Size = new System.Drawing.Size(121, 22);
             this.labelGameSettings.TabIndex = 12;
             this.labelGameSettings.Text = "Game Settings";
             this.labelGameSettings.Click += new System.EventHandler(this.labelGameSettings_Click);
+            // 
+            // labelCpuLvlStr
+            // 
+            this.labelCpuLvlStr.AutoSize = true;
+            this.labelCpuLvlStr.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelCpuLvlStr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelCpuLvlStr.Location = new System.Drawing.Point(420, 134);
+            this.labelCpuLvlStr.Name = "labelCpuLvlStr";
+            this.labelCpuLvlStr.Size = new System.Drawing.Size(90, 15);
+            this.labelCpuLvlStr.TabIndex = 13;
+            this.labelCpuLvlStr.Text = "Random Moves";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(408, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "{";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(523, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(15, 25);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "}";
             // 
             // TictacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.labelCpuLvlStr);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelGameSettings);
             this.Controls.Add(this.labelTopLine);
             this.Controls.Add(this.label1);
@@ -401,6 +438,9 @@
         private System.Windows.Forms.Label labelTopLine;
         private System.Windows.Forms.Label labelHumanWins;
         private System.Windows.Forms.Label labelGameSettings;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label labelCpuLvlStr;
     }
 }
 

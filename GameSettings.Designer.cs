@@ -32,7 +32,13 @@
             this.labelGameTitleLine = new System.Windows.Forms.Label();
             this.labelGameSettingsTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelSet = new System.Windows.Forms.Label();
+            this.labelCpuDivider = new System.Windows.Forms.Label();
+            this.panelCpuRadios = new System.Windows.Forms.Panel();
+            this.radioButtonRandom = new System.Windows.Forms.RadioButton();
+            this.radioButtonSmartLvl1 = new System.Windows.Forms.RadioButton();
             this.panelBotColor.SuspendLayout();
+            this.panelCpuRadios.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBotColor
@@ -40,6 +46,9 @@
             this.panelBotColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelBotColor.BackColor = System.Drawing.SystemColors.Control;
+            this.panelBotColor.Controls.Add(this.panelCpuRadios);
+            this.panelBotColor.Controls.Add(this.labelCpuDivider);
+            this.panelBotColor.Controls.Add(this.labelSet);
             this.panelBotColor.Controls.Add(this.label1);
             this.panelBotColor.Controls.Add(this.labelGameTitleLine);
             this.panelBotColor.Controls.Add(this.labelGameSettingsTitle);
@@ -84,6 +93,69 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // labelSet
+            // 
+            this.labelSet.AutoSize = true;
+            this.labelSet.Font = new System.Drawing.Font("Tw Cen MT", 10F);
+            this.labelSet.ForeColor = System.Drawing.Color.Maroon;
+            this.labelSet.Location = new System.Drawing.Point(32, 61);
+            this.labelSet.Name = "labelSet";
+            this.labelSet.Size = new System.Drawing.Size(63, 16);
+            this.labelSet.TabIndex = 10;
+            this.labelSet.Text = "CPU Level";
+            // 
+            // labelCpuDivider
+            // 
+            this.labelCpuDivider.AutoSize = true;
+            this.labelCpuDivider.Location = new System.Drawing.Point(11, 148);
+            this.labelCpuDivider.Name = "labelCpuDivider";
+            this.labelCpuDivider.Size = new System.Drawing.Size(46, 17);
+            this.labelCpuDivider.TabIndex = 11;
+            this.labelCpuDivider.Text = "label1";
+            // 
+            // panelCpuRadios
+            // 
+            this.panelCpuRadios.Controls.Add(this.radioButtonRandom);
+            this.panelCpuRadios.Controls.Add(this.radioButtonSmartLvl1);
+            this.panelCpuRadios.Location = new System.Drawing.Point(8, 78);
+            this.panelCpuRadios.Name = "panelCpuRadios";
+            this.panelCpuRadios.Size = new System.Drawing.Size(234, 65);
+            this.panelCpuRadios.TabIndex = 13;
+            // 
+            // radioButtonRandom
+            // 
+            this.radioButtonRandom.AutoSize = true;
+            this.radioButtonRandom.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioButtonRandom.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radioButtonRandom.ForeColor = System.Drawing.Color.DarkGreen;
+            this.radioButtonRandom.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioButtonRandom.Location = new System.Drawing.Point(48, 4);
+            this.radioButtonRandom.Name = "radioButtonRandom";
+            this.radioButtonRandom.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.radioButtonRandom.Size = new System.Drawing.Size(156, 25);
+            this.radioButtonRandom.TabIndex = 11;
+            this.radioButtonRandom.TabStop = true;
+            this.radioButtonRandom.Text = "Random Moves    :";
+            this.radioButtonRandom.UseVisualStyleBackColor = true;
+            this.radioButtonRandom.CheckedChanged += new System.EventHandler(this.radioButtonRandom_CheckedChanged);
+            // 
+            // radioButtonSmartLvl1
+            // 
+            this.radioButtonSmartLvl1.AutoSize = true;
+            this.radioButtonSmartLvl1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioButtonSmartLvl1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.radioButtonSmartLvl1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.radioButtonSmartLvl1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.radioButtonSmartLvl1.Location = new System.Drawing.Point(48, 36);
+            this.radioButtonSmartLvl1.Name = "radioButtonSmartLvl1";
+            this.radioButtonSmartLvl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.radioButtonSmartLvl1.Size = new System.Drawing.Size(158, 25);
+            this.radioButtonSmartLvl1.TabIndex = 10;
+            this.radioButtonSmartLvl1.TabStop = true;
+            this.radioButtonSmartLvl1.Text = "Smart  Level 1       :";
+            this.radioButtonSmartLvl1.UseVisualStyleBackColor = true;
+            this.radioButtonSmartLvl1.CheckedChanged += new System.EventHandler(this.radioButtonSmartLvl1_CheckedChanged);
+            // 
             // GameSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -100,6 +172,8 @@
             this.Load += new System.EventHandler(this.GameSettings_Load);
             this.panelBotColor.ResumeLayout(false);
             this.panelBotColor.PerformLayout();
+            this.panelCpuRadios.ResumeLayout(false);
+            this.panelCpuRadios.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -110,5 +184,10 @@
         private System.Windows.Forms.Label labelGameTitleLine;
         private System.Windows.Forms.Label labelGameSettingsTitle;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSet;
+        private System.Windows.Forms.Label labelCpuDivider;
+        private System.Windows.Forms.Panel panelCpuRadios;
+        private System.Windows.Forms.RadioButton radioButtonRandom;
+        private System.Windows.Forms.RadioButton radioButtonSmartLvl1;
     }
 }
