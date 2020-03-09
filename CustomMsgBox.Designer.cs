@@ -32,6 +32,7 @@
             this.labelBotLine = new System.Windows.Forms.Label();
             this.buttonClose = new System.Windows.Forms.Button();
             this.labelTopLine = new System.Windows.Forms.Label();
+            this.panelDivider = new System.Windows.Forms.Panel();
             this.panelCustomMsgBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,13 +44,13 @@
             this.panelCustomMsgBox.Controls.Add(this.labelTopLine);
             this.panelCustomMsgBox.Location = new System.Drawing.Point(2, 2);
             this.panelCustomMsgBox.Name = "panelCustomMsgBox";
-            this.panelCustomMsgBox.Size = new System.Drawing.Size(446, 266);
+            this.panelCustomMsgBox.Size = new System.Drawing.Size(446, 259);
             this.panelCustomMsgBox.TabIndex = 0;
             // 
             // labelBotLine
             // 
             this.labelBotLine.AutoSize = true;
-            this.labelBotLine.Location = new System.Drawing.Point(86, 199);
+            this.labelBotLine.Location = new System.Drawing.Point(86, 158);
             this.labelBotLine.Name = "labelBotLine";
             this.labelBotLine.Size = new System.Drawing.Size(65, 28);
             this.labelBotLine.TabIndex = 5;
@@ -59,7 +60,7 @@
             // 
             this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonClose.Location = new System.Drawing.Point(187, 229);
+            this.buttonClose.Location = new System.Drawing.Point(187, 188);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(72, 34);
@@ -77,12 +78,21 @@
             this.labelTopLine.TabIndex = 3;
             this.labelTopLine.Text = "label1";
             // 
+            // panelDivider
+            // 
+            this.panelDivider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panelDivider.Location = new System.Drawing.Point(0, 260);
+            this.panelDivider.Name = "panelDivider";
+            this.panelDivider.Size = new System.Drawing.Size(450, 10);
+            this.panelDivider.TabIndex = 6;
+            // 
             // CustomMsgBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(450, 270);
+            this.Controls.Add(this.panelDivider);
             this.Controls.Add(this.panelCustomMsgBox);
             this.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -103,5 +113,6 @@
         private System.Windows.Forms.Label labelBotLine;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelTopLine;
+        private System.Windows.Forms.Panel panelDivider;
     }
 }
