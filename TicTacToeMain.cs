@@ -78,8 +78,8 @@ namespace Tic_tac_Toe
                         {
                             if (myTurn == false)
                                 {
-                                    CustomMsgBox MsgBoxCst = new CustomMsgBox();
-                                    MsgBoxCst.ShowDialog();
+                                    //CustomMsgBox MsgBoxCst = new CustomMsgBox();
+                                    //MsgBoxCst.ShowDialog();
                                     MessageBox.Show("You Win");
                                     playerXWins++;                        
                                     labelHumanWinsVal.Text = playerXWins.ToString();
@@ -124,7 +124,6 @@ namespace Tic_tac_Toe
 
         void NewGame()
         {
-            buttonResetGame.Text = CpuLevel.ToString();
             myTurn = true;
             turns = 0;
             foreach( Control button in groupBoxGameBtns.Controls)
