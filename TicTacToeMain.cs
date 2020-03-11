@@ -123,19 +123,19 @@ namespace Tic_tac_Toe
         }
 
         void NewGame()
-        {
-            myTurn = true;
-            turns = 0;
-            foreach( Control button in groupBoxGameBtns.Controls)
-                {
-                    if (button.GetType() == typeof(Button))
-                        {
-                            button.Text = "";
-                        }
-                }
-            Highlight_Highest_Score();
+            {
+                myTurn = true;
+                turns = 0;
+                foreach( Control button in groupBoxGameBtns.Controls)
+                    {
+                        if (button.GetType() == typeof(Button))
+                            {
+                                button.Text = "";
+                            }
+                    }
+                Highlight_Highest_Score();
 
-        }
+            }
 
         private void buttonNewGame_Click(object sender, EventArgs e)
             {
@@ -276,9 +276,6 @@ namespace Tic_tac_Toe
                 return A12;
             else if (A23.Text == A12.Text && A12.Text == S && A03.Text == "")
                 return A03;
-
-
-
             else
             return null;
         }
@@ -287,6 +284,8 @@ namespace Tic_tac_Toe
         public Button CpuRandomMove()
             {
                 Button b = null;
+                int btnListCounter=0;
+                string[] buttonList = new string[10-turns];
                      foreach( Control button in groupBoxGameBtns.Controls)
                         {
                             if (button.GetType() == typeof(Button))
@@ -294,17 +293,24 @@ namespace Tic_tac_Toe
                                     b = button as Button;
                                         if (b != null)
                                             {
+                                                ////buttonList[btnListCounter]=b.Name;
+                                                ////btnListCounter++;
                                                 if (b.Text == "")
                                                     {
                                                         return b;
                                                     }
+                                                
                                         }
 
                                 }
 
                         }
-
-            return b;
+                //foreach (var x in buttonList)
+                //    {
+                //buttonList.r
+                //        MessageBox.Show(x);
+                //    }
+                return b;
             }
 
         public Button CpuPlayer()
@@ -378,8 +384,10 @@ namespace Tic_tac_Toe
         private void labelGameSettings_Click(object sender, EventArgs e)
         {
             // show pop up with different settings to Select
+            buttonResetGame.PerformClick();
             GameSettings Settings = new GameSettings();
             Settings.ShowDialog();
+            labelCpuLvlStr.Text = CpuLevelStr.ToString();
         }
     }
 }

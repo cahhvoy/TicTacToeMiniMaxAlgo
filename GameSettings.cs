@@ -53,22 +53,28 @@ namespace Tic_tac_Toe
         {
             //apply settings then Close
 
+
+
             this.Close();
 
         }
 
         private void radioButtonRandom_CheckedChanged(object sender, EventArgs e)
         {
-            TictacToe.CpuLevel = 1;
-            TictacToe ticMain = new TictacToe();
-            ticMain.labelCpuLvlStr.Text = "Random Moves";
+            if (radioButtonRandom.Checked == true)
+                {
+                    TictacToe.CpuLevel = 1;
+                    TictacToe.CpuLevelStr = "Random Moves";
+                }
         }
 
         private void radioButtonSmartLvl1_CheckedChanged(object sender, EventArgs e)
         {
-            TictacToe.CpuLevel = 2;
-            TictacToe ticMain = new TictacToe();
-            ticMain.labelCpuLvlStr.Text = "Smart Cpu {1}";
+            if (radioButtonSmartLvl1.Checked == true)
+                {
+                    TictacToe.CpuLevel = 2;
+                    TictacToe.CpuLevelStr = "Smart Cpu {1}";
+                }
         }
     }
 }
