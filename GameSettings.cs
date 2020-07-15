@@ -33,14 +33,7 @@ namespace Tic_tac_Toe
                 labelCpuDivider.BorderStyle = BorderStyle.None;
                 labelCpuDivider.BackColor = Color.DimGray;
 
-                labelPlayerDivider.AutoSize = false;
-                labelPlayerDivider.Text = "";
-                labelPlayerDivider.Height = 1;
-                labelPlayerDivider.Width = 225;
-                labelPlayerDivider.BorderStyle = BorderStyle.None;
-                labelCpuDivider.BackColor = Color.DimGray;
-            
-            
+               
                int selected = TictacToe.CpuLevel;
                  if (selected == 1)
                     {
