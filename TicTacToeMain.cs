@@ -78,9 +78,15 @@ namespace Tic_tac_Toe
                         {
                             if (myTurn == false)
                                 {
-                                    //CustomMsgBox MsgBoxCst = new CustomMsgBox();
-                                    //MsgBoxCst.ShowDialog();
-                                    MessageBox.Show("You Win");
+// <<<<<<< AddingCpuPlayer
+//                                     //CustomMsgBox MsgBoxCst = new CustomMsgBox();
+//                                     //MsgBoxCst.ShowDialog();
+//                                     MessageBox.Show("You Win");
+// =======
+//                                     //CustomMsgBox msgBox = new CustomMsgBox();
+//                                     //msgBox.ShowDialog();
+//                                     MessageBox.Show("Player X Wins");
+// >>>>>>> TwoPlayers
                                     playerXWins++;                        
                                     labelHumanWinsVal.Text = playerXWins.ToString();
                                     NewGame();
